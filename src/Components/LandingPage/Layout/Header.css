@@ -1,0 +1,126 @@
+@media (max-width: 1023px) {
+  .logo {
+    padding: 0 !important;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .navbar {
+    padding: 0.2rem 1rem;
+    width: 100%;
+    background: var(--mako-primary);
+  }
+  .nav-link {
+    margin: 0;
+    padding: 0.25rem 1rem !important;
+  }
+  .btn-login {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .logo {
+    width: 156px;
+    height: 71px;
+  }
+
+  .underline {
+    display: none;
+  }
+  .active .underline {
+    display: flex;
+    background: url("./headingUnderline.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    transform: translateX(-15%);
+    background-size: 100% 100%;
+    width: 150%;
+    height: 100%;
+  }
+  .navbar {
+    /* padding: 36px auto;*/
+    padding: 1rem 42px !important;
+    width: 100%;
+    background: var(--mako-primary);
+    /* max-width: 1356px; */
+    /* height: 71px; */
+  }
+
+  .btn-login {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 25px;
+    width: 111px;
+    height: 48px;
+    margin-top: -11px;
+
+    /* Mako / Secondary */
+    background-color: var(--mako-secondary) !important;
+    border-radius: 5px;
+    border-color: var(--mako-secondary) !important;
+  }
+  .links {
+    display: flex;
+    justify-content: stretch;
+    height: 28.74px;
+    flex-direction: column;
+  }
+  .nav-link {
+    margin: 6px 27px;
+  }
+  .active {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: var(--ui-white);
+    /* margin: 0px 6px; */
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.navbar-light .navbar-toggler {
+  border: 0;
+  outline: 0;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(239,169,50)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* .scrolled {
+  background-color: var(--mako-primary) !important;
+  transition: background-color 200ms linear;
+} */
+.menu {
+  margin-left: auto;
+}
+.navbar-nav {
+  margin: auto 0 auto auto;
+}
+.logo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  color: var(--ui-white);
+}
+
+.nav-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff !important;
+}

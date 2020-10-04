@@ -1,0 +1,70 @@
+@media (max-width: 1023px) {
+  .closing {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0;
+    background: var(--mako-primary);
+  }
+  .closing .web-body {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--ui-white);
+  }
+  .close-rect {
+    display: none;
+  }
+  .closing img {
+    display: none;
+  }
+  .closing .enroll-btn {
+    padding: 12px 3rem;
+    background: var(--mako-secondary);
+    border-radius: 5px;
+    margin: 1rem auto 3rem;
+  }
+  .closing .web-subheading {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--ui-white);
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .closing {
+    width: 100%;
+    max-width: 1440px;
+    height: 401px;
+    margin: 0 auto;
+    padding: 0;
+    background: var(--mako-primary);
+  }
+  .closing .web-body {
+    margin-top: 124px;
+    color: var(--ui-white);
+  }
+  .close-rect {
+    position: relative;
+    width: 26px;
+    height: 8px;
+    background: var(--support-red);
+    margin: -4.7rem 0 -1px 66.3rem;
+  }
+  .closing img {
+    width: 187px;
+    height: 104px;
+    margin: 82px auto 20px -1px !important;
+  }
+  .closing .enroll-btn {
+    padding: 14px 25px;
+    width: 365px;
+    height: 55px;
+    background: var(--mako-secondary);
+    border-radius: 5px;
+    margin: 20px auto auto 140px;
+  }
+  .closing .web-subheading {
+    margin-top: 20px;
+    color: var(--ui-white);
+  }
+}

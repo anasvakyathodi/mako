@@ -1,13 +1,172 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --mako-primary: #125730;
+  --mako-secondary: #f1ac2e;
+  --ui-lg: #eafff3;
+  --ui-ly: #ffefd2;
+  --ui-white: #ffffff;
+  --ui-black: #2a2a2a;
+  --ui-secondary: #f8d597;
+  --support-red: #ff6666;
+  --ui-stroke: #d8d8d8;
+  --support-green: #65b337;
+  --support-violet: #7660b7;
+  --support-orange: #f18c16;
+  --ui-deselect: #717171;
+  --ui-grey-2: #f8f8f8;
+  --shadow-large: 4px 12px 36px rgba(0, 0, 0, 0.1);
+  --shadow-small: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row,
+.col {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* 
+@media (max-width: 1023) {
+  .web-body,
+  .web-body-2,
+  .web-heading,
+  .web-topic,
+  .web-error,
+  .web-overline,
+  .web-quote,
+  .web-subheading,
+  .web-subtitle,
+  .web-title,
+  .web-topic {
+    font-size: smaller !important;
+  }
+} */
+
+/* text styles */
+.web-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.375rem;
+  line-height: 136%;
+
+  /* or 73px */
+
+  color: #c4c4c4;
+}
+.web-subheading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.1875rem;
+  line-height: 150%;
+
+  /* identical to box height, or 52px */
+
+  color: #c4c4c4;
+}
+
+.web-quote {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5625rem;
+  line-height: 150%;
+
+  /* identical to box height, or 37px */
+
+  color: #c4c4c4;
+}
+
+.web-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 136%;
+
+  /* or 33px */
+
+  color: #c4c4c4;
+}
+
+.web-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 150%;
+
+  /* or 27px */
+
+  color: #c4c4c4;
+}
+
+.web-body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 150%;
+
+  /* identical to box height, or 27px */
+
+  color: #c4c4c4;
+}
+
+.web-body-2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+
+  /* or 24px */
+
+  color: #c4c4c4;
+}
+
+.web-overline {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 150%;
+
+  /* identical to box height, or 21px */
+
+  color: #c4c4c4;
+}
+
+.web-error {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 150%;
+
+  /* or 18px */
+
+  color: #c4c4c4;
+}
+
+.web-topic {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 136%;
+
+  color: #c4c4c4;
 }

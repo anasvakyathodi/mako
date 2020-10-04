@@ -1,0 +1,106 @@
+/* @media (max-width: 1023px) {
+  .footer {
+    margin: 0 auto;
+    background: var(--ui-black);
+  }
+  .footer .footer-logo {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .footer .social-icons {
+    margin: 2rem auto 2rem;
+    text-align: center;
+    font-size: 32px;
+  }
+  .footer .social-icons a {
+    color: var(--ui-white);
+  }
+  .footer .web-body {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--ui-white);
+  }
+  .footer .logo-container {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--ui-black);
+  }
+  .footer .footer-logo {
+    margin-top: 72px;
+  }
+  .footer .social-icons {
+    font-size: 32px;
+    color: var(--ui-white);
+  }
+  .footer .web-body {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    text-align: right;
+    color: var(--ui-white);
+  }
+}
+
+.footer .social-icons a {
+  margin-right: 35px;
+}
+.footer .social-icons a:last-of-type {
+  margin-right: 0;
+} */
+.footer {
+  margin: 0 auto;
+  background: var(--ui-black);
+  height: 100%;
+}
+.footer .web-body-2,
+.footer .web-subheading,
+.footer .web-heading {
+  color: var(--ui-white);
+}
+.footer .web-subheading {
+  margin: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .social-container a {
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 1023px) {
+  .social-container .web-heading {
+    margin: auto;
+  }
+  .social-container .web-subheading {
+    margin-left: 2rem;
+  }
+  .social-container a {
+    margin: 0.8rem 0;
+    margin-left: 2rem;
+  }
+  .social-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contaier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer .web-error {
+  margin: 1rem auto;
+}

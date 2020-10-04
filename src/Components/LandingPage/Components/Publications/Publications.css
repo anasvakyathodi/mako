@@ -1,0 +1,76 @@
+@media (max-width: 1023px) {
+  .publications .side-image {
+    width: 100%;
+    height: 100%;
+    /* margin-left: -180px; */
+  }
+  .publications .article {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .publications .media {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 1rem auto 1rem;
+  }
+  .publications .article-seperator {
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--ui-stroke);
+  }
+  .publications .media .web-body {
+    color: var(--ui-black);
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .publications .side-image {
+    width: 688.81px;
+    height: 661.6px;
+    margin-left: -180px;
+  }
+  .publications .article {
+    width: 602px;
+    height: 370px;
+    margin: 100px auto;
+  }
+  .publications {
+    height: 687.6px;
+  }
+  .publications .media {
+    width: 602px !important;
+    border: 0;
+    height: 90px;
+    padding: 0;
+    margin: 28px auto 25px;
+  }
+  .publications .article-seperator {
+    width: 602px;
+    height: 0px;
+    border: 1px solid var(--ui-stroke);
+  }
+  .publications .media .web-body {
+    color: var(--ui-black);
+    margin-bottom: 8px;
+  }
+}
+
+.publications .web-topic {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--support-red);
+}
+
+.publications .media .card-img {
+  width: 108px;
+  height: 90px;
+  margin-right: 35px;
+  border-radius: 10px;
+}
+
+.publications .media .web-overline {
+  color: var(--ui-black);
+  opacity: 0.8;
+}

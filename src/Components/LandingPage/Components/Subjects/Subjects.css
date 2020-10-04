@@ -1,0 +1,123 @@
+@media (max-width: 1023px) {
+  .subject-btn-rect-wrapper {
+    position: relative;
+    margin: -30px 0 0 17.5rem;
+  }
+  .subjects .web-body {
+    margin: 46px auto 29px;
+  }
+  .subjects .subject-card {
+    margin: auto;
+  }
+  .more-course-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border: 0;
+    background: var(--mako-primary) !important;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: none;
+  }
+  .subjects .subject-card {
+    max-width: 365px;
+  }
+  .subjects {
+    margin: 1rem auto 5rem;
+  }
+  .subject-card .card-rating {
+    font-size: 1.05rem;
+  }
+}
+@media (min-width: 1024px) {
+  .subject-btn-rect-wrapper {
+    position: relative;
+    margin: -2rem 0 0 45.2rem;
+  }
+
+  .more-course-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    width: 365px;
+    height: 55px;
+    border: 0;
+    background: var(--mako-primary) !important;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: none;
+  }
+  .subjects .subject-card {
+    width: 365px;
+    height: 497px;
+  }
+  .subjects {
+    margin: 124.5px auto 118px;
+    height: 849px;
+  }
+}
+
+.subjects .web-topic {
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  color: var(--support-red);
+}
+
+.subject-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--mako-primary) !important;
+  margin-bottom: 35px;
+  margin-top: 82px;
+}
+.subject-card .card-profile {
+  margin: -42px auto;
+}
+.subject-card .web-body-2 {
+  margin: 32px auto 20px;
+  text-align: center;
+  color: var(--ui-black);
+  opacity: 0.7;
+}
+
+.subject-card .web-body {
+  text-align: center;
+  color: var(--ui-black);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.subject-card .card-description {
+  margin-bottom: 35px;
+}
+.subject-card .card-rating,
+.subject-card .card-participation {
+  margin-bottom: 15px;
+}
+.subject-card .card-participation img,
+.subject-card .card-rating img {
+  margin-right: 11px;
+}
+
+.subjects .web-body {
+  margin: 72px auto 29px;
+  color: var(--ui-black);
+}
+.subject-btn-rect {
+  position: relative;
+  width: 26px;
+  height: 8px;
+  background: var(--mako-secondary);
+}

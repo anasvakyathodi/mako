@@ -1,0 +1,235 @@
+@media (min-width: 1024px) {
+  .banner {
+    background: url("./newBG.svg");
+    overflow: hidden;
+    height: 775.5px;
+  }
+  .banner-img {
+    display: none;
+  }
+  .banner .text-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 215px;
+    width: 100%;
+  }
+  .subtitleText {
+    width: 548px;
+    height: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--ui-white) !important;
+    opacity: 0.9;
+  }
+  .banner .card {
+    margin-top: 70px;
+    margin-bottom: 107px;
+    width: 545px;
+    height: 171px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--ui-secondary);
+    background-size: auto;
+  }
+  .banner .card .card-body {
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--ui-ly);
+    width: 375px;
+    height: 171px;
+  }
+  .banner .card-body .web-body-2 {
+    color: var(--ui-black) !important;
+    margin-left: 10px;
+    margin: auto;
+  }
+  .banner .web-title {
+    color: var(--mako-primary) !important;
+    margin-left: 10px;
+  }
+  .banner .card-body .card-rect {
+    position: relative;
+    width: 49px;
+    height: 20px;
+    background: var(--support-red);
+  }
+}
+
+@media (max-width: 1023px) {
+  .banner {
+    background: var(--mako-primary);
+    padding-top: 1rem;
+    min-height: auto !important;
+  }
+  .banner .text-container {
+    margin-top: 0;
+  }
+  .banner-img {
+    padding-top: 4rem;
+    width: 90%;
+  }
+  .banner .web-heading {
+    font-size: 2.5rem;
+  }
+  .popup {
+    margin: auto;
+  }
+
+  .subtitleText {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 150%;
+    color: var(--ui-white) !important;
+    opacity: 0.9;
+  }
+  .banner .card {
+    margin-top: 70px;
+    margin-bottom: 107px;
+    max-width: 545px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--ui-secondary);
+    background-size: auto;
+  }
+  .banner .card .card-body {
+    margin: auto;
+    /* padding: 25px; */
+    border-radius: 10px 0 0 10px;
+    background-color: var(--ui-ly);
+    max-width: 375px;
+    /* height: 171px; */
+  }
+  .banner .card-body .web-body-2 {
+    color: var(--ui-black) !important;
+    margin-left: 10px;
+    line-height: 1.3rem;
+    font-size: 0.7rem;
+    margin: auto;
+  }
+  .banner .web-title {
+    color: var(--mako-primary) !important;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  .banner .card-body .card-rect {
+    position: relative;
+    width: 30px;
+    height: 15px;
+    background: var(--support-red);
+  }
+}
+
+.banner {
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner .web-heading {
+  margin: 0 auto 16px 0px;
+  color: var(--ui-white) !important;
+}
+
+/* card */
+
+.banner .card-body .card-rect-wrapper {
+  position: absolute;
+  left: 143%;
+  bottom: 44%;
+}
+
+.btn-container1 {
+  background: transparent;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  transform: translate(0);
+}
+
+.banner .card .btn-container1 .btn-play-outer {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background: rgba(241, 172, 46, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .card .btn-container1 .btn-play-inner {
+  width: 64.83px;
+  height: 64.83px;
+  border-radius: 50%;
+  background: var(--mako-secondary);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .card .btn-container1 .btn-play-inner:focus {
+  box-shadow: none !important;
+}
+.banner .card .btn-container1 .btn-play-inner .btn-play {
+  font-size: 1.5rem;
+  color: white;
+}
+/* arrow */
+.banner .arrow-wrapper {
+  position: absolute;
+  bottom: 40%;
+  left: 42%;
+}
+.banner .arrow-wrapper .arrow-img {
+  background: url("./arrow.svg");
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 187px;
+  height: 104px;
+}
+
+/* popup */
+#join-demo {
+  margin: 10vh auto;
+  width: 354px;
+  height: 440px;
+}
+
+#join-demo .popup {
+  width: 354px;
+  height: 440px;
+}
+.card .popup .img {
+  width: 354px;
+  height: 195px;
+  border-radius: 10px 10px 0px 0px;
+}
+.popup .card-body .web-title {
+  text-align: center;
+  color: var(--mako-primary);
+  margin-bottom: 20px;
+}
+.popup .card-body .web-body {
+  text-align: center;
+  color: var(--ui-primary);
+  margin-bottom: 20px;
+}
+.popup .card-body .popup-btn {
+  width: 184px;
+  height: 55px;
+  background: var(--mako-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
