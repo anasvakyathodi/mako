@@ -1,0 +1,31 @@
+.section3 .web-body {
+  color: var(--ui-black);
+}
+.section3 .web-topic {
+  color: var(--support-red);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.section3 .web-subheading {
+  color: var(--mako-primary);
+  margin-bottom: 2rem;
+}
+.section3 .row {
+  margin-bottom: 9rem;
+}
+@media (min-width: 1024px) {
+  .section3 {
+    padding-top: 15rem;
+  }
+}
+@media (max-width: 1023px) {
+  .section3 .web-body,
+  .section3 .web-topic,
+  .section3 .web-subheading {
+    text-align: center;
+    margin: 1rem auto !important;
+  }
+  .section3 .row {
+    margin: 3rem auto !important;
+  }
+}

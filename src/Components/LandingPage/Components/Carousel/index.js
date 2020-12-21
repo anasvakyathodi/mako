@@ -5,7 +5,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import childIcon from "./childIcon.svg";
 import likeIcon from "./LikeIcon.svg";
 import copyIcon from "./CopyIcon.svg";
-import CardImage from "./CardImage.svg";
 import { GoPrimitiveDot } from "react-icons/go";
 import nithya from "./nithya.jpg";
 import anju from "./anju.jpg";
@@ -99,10 +98,10 @@ const CarouselComponent = () => {
   return (
     <section className="carousel-container">
       <Container>
-        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp">
           <div className="web-topic">Let our numbers speak</div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp">
           <div className="web-heading">
             Students and parents trust us from 2017. Now it's your turn to
             experience the Mako way of learning
@@ -112,7 +111,7 @@ const CarouselComponent = () => {
           <Row>
             {featurelist.map((feature) => (
               <Col lg="4" xs="12" key={feature.id.toString()}>
-                <ScrollAnimation animateIn="animate__flipInX" animateOnce>
+                <ScrollAnimation animateIn="animate__flipInX">
                   <Container className="feature">
                     <div className="feature-image">
                       <img src={feature.icon} alt="feature-icon" />
@@ -131,11 +130,7 @@ const CarouselComponent = () => {
             ))}
           </Row>
           <Row>
-            <ScrollAnimation animateOnce="animate__fadeInUp" animateOnce>
-              <div className="web-title">
-                Hear how our students got Makofied{" "}
-              </div>
-            </ScrollAnimation>
+            <div className="web-title">Hear how our students got Makofied</div>
           </Row>
         </div>
         <Container>

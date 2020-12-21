@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // layouts
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
-import "./script";
+// import "./script";
 // pages
 import Banner from "./Components/Banner/";
 import Courses from "./Components/Courses";
@@ -12,12 +12,13 @@ import Subjects from "./Components/Subjects";
 import Publications from "./Components/Publications";
 import ClosingStatement from "./Components/ClosingStatement";
 import ReactLoading from "react-loading";
-import {
-  TiSocialTwitter,
-  TiSocialInstagram,
-  TiSocialFacebook,
-} from "react-icons/ti";
-import { BiLink } from "react-icons/bi";
+
+// import {
+//   TiSocialTwitter,
+//   TiSocialInstagram,
+//   TiSocialFacebook,
+// } from "react-icons/ti";
+
 // css
 import "./index.css";
 const LandingPage = () => {
@@ -47,11 +48,11 @@ const LandingPage = () => {
             <Blog />
             <Carousel />
             <Subjects />
-            {/* <Publications /> */}
+            <Publications />
             <ClosingStatement />
             <Footer />
           </div>
-          <div className="backdrop"></div>
+          {/* <div className="backdrop"></div>
           <div className="fab child" data-subitem="1">
             <a href="https://www.instagram.com/mako.app">
               <TiSocialInstagram />
@@ -66,7 +67,7 @@ const LandingPage = () => {
             <a href="https://www.twitter.com/HubMako">
               <TiSocialTwitter />
             </a>
-          </div>
+          </div> */}
           {/* <div className="fab" id="masterfab">
             <div>
               <BiLink />

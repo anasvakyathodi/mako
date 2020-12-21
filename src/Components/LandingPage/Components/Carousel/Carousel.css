@@ -29,7 +29,9 @@
   }
   .carousel-container .feature-container .web-title {
     margin: 2rem auto 2rem;
-    color: var(--mako-primary);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--ui-black);
   }
   .carousel-card .web-title {
     color: var(--ui-black);
@@ -63,13 +65,13 @@
     padding-top: 224px;
   }
   .carousel-container {
+    /* background-color: ; */
     background: url("./CarouselBG.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 1325.5px;
     width: 100%;
-    max-width: 1440;
   }
   .carousel-container .feature-container .feature .feature-image {
     width: 72px;
@@ -79,7 +81,7 @@
   }
   .carousel-container .feature-container .web-title {
     margin: 130px auto 55px;
-    color: var(--mako-primary);
+    color: var(--ui-black);
   }
   .carousel-card .web-title {
     color: var(--ui-black);
@@ -117,7 +119,7 @@
 }
 .carousel-container .web-heading {
   text-align: center;
-  color: var(--mako-primary);
+  color: var(--ui-black);
   margin: auto auto 54px;
 }
 .container {
@@ -142,7 +144,7 @@
 .carousel-container .feature-container .feature .feature-heading {
   line-height: 136%;
   text-align: center;
-  color: var(--mako-primary);
+  color: var(--ui-black);
   display: flex;
 }
 .carousel-container .feature-container .feature .feature-description {
@@ -182,4 +184,9 @@
 
 .indicators span {
   margin: auto auto;
+}
+@media (width>1440px) {
+  .carousel-container {
+    background: url("./CarouselBG.svg") var(--ui-secondary) no-repeat center;
+  }
 }

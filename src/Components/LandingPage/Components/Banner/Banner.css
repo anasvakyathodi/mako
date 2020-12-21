@@ -1,8 +1,9 @@
 @media (min-width: 1024px) {
   .banner {
     background: url("./newBG.svg");
+    background-size: contain !important;
     overflow: hidden;
-    height: 775.5px;
+    min-height: 775.5px;
   }
   .banner-img {
     display: none;
@@ -20,7 +21,7 @@
     font-weight: normal;
     font-size: 1rem;
     line-height: 150%;
-    color: var(--ui-white) !important;
+    color: var(--ui-black) !important;
     opacity: 0.9;
   }
   .banner .card {
@@ -47,7 +48,7 @@
     margin: auto;
   }
   .banner .web-title {
-    color: var(--mako-primary) !important;
+    color: var(--ui-black) !important;
     margin-left: 10px;
   }
   .banner .card-body .card-rect {
@@ -60,8 +61,8 @@
 
 @media (max-width: 1023px) {
   .banner {
-    background: var(--mako-primary);
-    padding-top: 1rem;
+    background: var(--ui-grey-2);
+    padding-top: 6rem;
     min-height: auto !important;
   }
   .banner .text-container {
@@ -84,7 +85,7 @@
     font-weight: normal;
     font-size: 0.75rem;
     line-height: 150%;
-    color: var(--ui-white) !important;
+    color: var(--ui-black) !important;
     opacity: 0.9;
   }
   .banner .card {
@@ -135,7 +136,7 @@
 
 .banner .web-heading {
   margin: 0 auto 16px 0px;
-  color: var(--ui-white) !important;
+  color: var(--mako-primary) !important;
 }
 
 /* card */
@@ -216,7 +217,7 @@
 }
 .popup .card-body .web-title {
   text-align: center;
-  color: var(--mako-primary);
+  color: var(--ui-black);
   margin-bottom: 20px;
 }
 .popup .card-body .web-body {
@@ -232,4 +233,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.banner .web-heading {
+  color: var(--mako-primary);
+}
+@media (width>1440px) {
+  .banner {
+    background: url("./newBG.svg") var(--ui-grey-2) no-repeat center;
+  }
+}
+.side-vector::after {
+  content: " ";
+  background: url("./sideVector.svg");
+  background-size: 100%;
+  width: 397.45px;
+  height: 402.5px;
+  position: absolute;
+  left: -139px;
+  top: 218px;
 }

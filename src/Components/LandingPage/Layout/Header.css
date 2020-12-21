@@ -1,6 +1,6 @@
 @media (max-width: 1023px) {
   .logo {
-    padding: 0 !important;
+    padding: 0.5rem !important;
   }
   .logo img {
     width: 120px;
@@ -8,12 +8,13 @@
   .navbar {
     padding: 0.2rem 1rem;
     width: 100%;
-    background: var(--mako-primary);
+    background: white !important;
   }
   .nav-link {
     margin: 0;
     padding: 0.25rem 1rem !important;
   }
+
   .btn-login {
     background: transparent !important;
     border: 0 !important;
@@ -22,11 +23,10 @@
   }
 }
 @media (min-width: 1024px) {
-  .logo {
+  .logo img {
     width: 156px;
-    height: 71px;
+    height: auto;
   }
-
   .underline {
     display: none;
   }
@@ -45,7 +45,7 @@
     /* padding: 36px auto;*/
     padding: 1rem 42px !important;
     width: 100%;
-    background: var(--mako-primary);
+    /* background: var(--mako-primary); */
     /* max-width: 1356px; */
     /* height: 71px; */
   }
@@ -122,5 +122,14 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  color: #ffffff !important;
+  color: #000 !important;
+}
+.nav-link:hover {
+  color: var(--mako-secondary) !important;
+}
+
+.btn-primary:hover {
+  background-color: white !important;
+  color: var(--mako-secondary) !important;
+  border: 2px solid var(--mako-secondary) !important;
 }

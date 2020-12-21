@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 477px;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
   }
   .blog-rect-wrapper {
@@ -108,18 +108,18 @@
 }
 .blog .web-topic {
   text-transform: uppercase;
-  color: var(--support-red);
+  color: #fda14a;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .blog .card-container .web-subtitle {
   text-align: center;
-  color: var(--mako-primary);
+  color: var(--ui-black);
 }
 
 .blog .card-container .web-quote {
-  color: var(--mako-primary);
+  color: var(--ui-black);
   font-size: 1.2rem;
 }
 
@@ -154,7 +154,7 @@
 .blog-rect {
   width: 18px;
   height: 41px;
-  background: var(--mako-primary);
+  background: var(--ui-black);
 }
 .blog .blog-container .card .image-container {
   align-items: center;

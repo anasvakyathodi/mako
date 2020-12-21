@@ -1,6 +1,6 @@
 import React from "react";
 import "./Publications.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import PublicationsSideBG from "./PublicationsSideBG.svg";
 import BlogImg from "./BlogImg.svg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -44,45 +44,47 @@ const BlogGenerator = ({ name, number, description, date }) => {
 };
 const Publications = () => {
   return (
-    <Container className="publications" id="blog">
-      <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
-        <div className="web-topic">Our blogs and publications</div>
-      </ScrollAnimation>
-      <Row>
-        <Col sm="1"></Col>
-        <Col>
-          <Row>
-            <Col lg="6" xs="12">
-              <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce>
-                <img
-                  src={PublicationsSideBG}
-                  className="side-image"
-                  alt="publications-boy-smile"
-                />
-              </ScrollAnimation>
-            </Col>
-            <Col lg="6" xs="12">
-              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce>
-                <div className="article">
-                  {blogDetails.map((blog) => (
-                    <BlogGenerator
-                      {...{
-                        name: blog.name,
-                        number: blog.number,
-                        description: blog.description,
-                        date: blog.date,
-                      }}
-                      key={blog.name}
-                    />
-                  ))}
-                </div>
-              </ScrollAnimation>
-            </Col>
-          </Row>
-        </Col>
-        <Col sm="1"></Col>
-      </Row>
-    </Container>
+    <section className="publications" id="blog">
+      <div className="container-lg">
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <div className="web-topic">Our blogs and publications</div>
+        </ScrollAnimation>
+        <Row>
+          <Col sm="1"></Col>
+          <Col>
+            <Row>
+              <Col lg="6" xs="12">
+                <ScrollAnimation animateIn="animate__fadeInLeft">
+                  <img
+                    src={PublicationsSideBG}
+                    className="side-image"
+                    alt="publications-boy-smile"
+                  />
+                </ScrollAnimation>
+              </Col>
+              <Col lg="6" xs="12">
+                <ScrollAnimation animateIn="animate__fadeInRight">
+                  <div className="article">
+                    {blogDetails.map((blog) => (
+                      <BlogGenerator
+                        {...{
+                          name: blog.name,
+                          number: blog.number,
+                          description: blog.description,
+                          date: blog.date,
+                        }}
+                        key={blog.name}
+                      />
+                    ))}
+                  </div>
+                </ScrollAnimation>
+              </Col>
+            </Row>
+          </Col>
+          <Col sm="1"></Col>
+        </Row>
+      </div>
+    </section>
   );
 };
 

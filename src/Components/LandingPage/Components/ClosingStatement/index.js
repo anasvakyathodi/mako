@@ -18,22 +18,19 @@ const ClosingStatement = () => {
           </Col>
           <Col lg="6" xs="12">
             <img src={Arrow} alt="arrow" id="arrow-img" />
-            <ScrollAnimation animateIn="animate__zoomIn" animateOnce>
+            <ScrollAnimation animateIn="animate__zoomIn">
               <button
-                className="btn enroll-btn d-flex justify-content-center align-items-center"
+                className="btn enroll-btn d-flex justify-content-center align-items-center web-subtitle"
                 onClick={(e) => {
                   e.preventDefault();
                   history.push("/register");
                 }}
               >
-                <div className="web-subtitle text-white">Enroll now</div>
+                Enroll now
               </button>
             </ScrollAnimation>
           </Col>
         </Row>
-        <ScrollAnimation animateIn="animate__zoomIn" animateOnce>
-          <div className="close-rect"></div>
-        </ScrollAnimation>
       </Container>
     </div>
   );

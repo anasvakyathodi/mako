@@ -1,44 +1,48 @@
 import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
-import ScrollAnimation from "react-animate-on-scroll";
-import CardMediaBG from "./CardMediaBG.svg";
-import CardProfile from "./CardProfile.svg";
+import CardMediaBG1 from "./CardBG1.png";
+import CardMediaBG2 from "./CardBG2.png";
+import CardMediaBG3 from "./CardBG3.png";
+import CardProfile1 from "./Pr1.svg";
+import CardProfile2 from "./Pr2.svg";
+import CardProfile3 from "./Pr3.svg";
 import ParticipationIcon from "./ParticipationIcon.svg";
 import RatingIcon from "./RatingIcon.svg";
 import "./Subjects.css";
+import { useHistory } from "react-router-dom";
 const CardDetails = [
   {
-    subject: "Physics",
-    id: "physics",
-    background: CardMediaBG,
-    profile: CardProfile,
-    tutor: "Dr. Shreeja",
+    subject: "Vedic maths",
+    id: "vedic_maths",
+    background: CardMediaBG1,
+    profile: CardProfile1,
+    tutor: "Mr. Ajmal Yoosuf",
     description:
-      "Pulvinar facilisi non eget vulputate cras amet auctor consequat.",
+      "Transform yourself into a super computer with the power of Vedas.",
     rating: "90%",
-    participation: "2000+",
+    participation: "100+",
   },
   {
-    subject: "Chemistry",
-    id: "chemistry",
-    background: CardMediaBG,
-    profile: CardProfile,
-    tutor: "Dr. Shreeja",
+    subject: "Spoken English",
+    id: "spoken_english",
+    background: CardMediaBG2,
+    profile: CardProfile2,
+    tutor: "Miss. Seetha  Satheesh",
     description:
-      "Pulvinar facilisi non eget vulputate cras amet auctor consequat.",
+      "Increase your self-esteem by mastering the language  of the world.",
     rating: "90%",
-    participation: "2000+",
+    participation: "50+",
   },
   {
-    subject: "Maths",
-    id: "maths",
-    background: CardMediaBG,
-    profile: CardProfile,
-    tutor: "Dr. Shreeja",
+    subject: "Coding",
+    id: "coding",
+    background: CardMediaBG3,
+    profile: CardProfile3,
+    tutor: "Mr .Manit Malhotra",
     description:
-      "Pulvinar facilisi non eget vulputate cras amet auctor consequat.",
+      "Learn how to build from scratch a coded chatbot in under 10 days.",
     rating: "90%",
-    participation: "2000+",
+    participation: "50+",
   },
 ];
 
@@ -78,6 +82,11 @@ const CardGenerator = ({
 };
 
 const Subjects = () => {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/register");
+  };
+
   return (
     <Container className="subjects">
       <div className="web-topic">Featured classes</div>
@@ -109,13 +118,10 @@ const Subjects = () => {
         </div>
       </Row>
       <Row>
-        {/* <button className="more-course-btn text-white">
+        <button onClick={handleClick} className="more-course-btn text-white">
           Explore all courses
-        </button> */}
+        </button>
       </Row>
-      {/* <div className="subject-btn-rect-wrapper">
-        <div className="subject-btn-rect"></div>
-      </div> */}
     </Container>
   );
 };

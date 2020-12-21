@@ -10,10 +10,10 @@ const Courses = () => {
   return (
     <section className="courses" id="features">
       <div className="container mt-5">
-        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp">
           <div className="web-topic">Learn anywhere anytime</div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp">
           <div className="web-heading">
             Transforming the way our children learn with the aid of technology
           </div>
@@ -25,7 +25,7 @@ const Courses = () => {
         <Col>
           <Row>
             <Col lg="4" xs="12" className="card-wrapper">
-              <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+              <ScrollAnimation animateIn="animate__fadeInUp">
                 <div className="card">
                   <img
                     src={CardImage}
@@ -53,7 +53,7 @@ const Courses = () => {
               </ScrollAnimation>
             </Col>
             <Col lg="4" xs="12" className="card-wrapper">
-              <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+              <ScrollAnimation animateIn="animate__fadeInUp">
                 <div className="card">
                   <img
                     src={CardImage}
@@ -78,7 +78,7 @@ const Courses = () => {
               </ScrollAnimation>
             </Col>
             <Col lg="4" xs="12" className="card-wrapper">
-              <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+              <ScrollAnimation animateIn="animate__fadeInUp">
                 <div className="card">
                   <img
                     src={CardImage}

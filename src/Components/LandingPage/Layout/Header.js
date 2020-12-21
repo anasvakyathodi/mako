@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./logo-big.png";
 import "./Header.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
-import "./script";
 // import { AuthContext } from "./../../../utils/authutils.js";
 
 const Header = () => {
@@ -32,14 +31,14 @@ const Header = () => {
             <div className="underline"></div>
           </Nav.Link>
           <NavDropdown className="links mb-1" title="Courses" id="courses">
-            <NavDropdown.Item href="/home/#physics" eventKey={1}>
-              Physics
+            <NavDropdown.Item href="/home/#vedic_maths" eventKey={1}>
+              Vedic Maths
             </NavDropdown.Item>
-            <NavDropdown.Item href="/home/#chemistry" eventKey={2}>
-              Chemistry
+            <NavDropdown.Item href="/home/#spoken_english" eventKey={2}>
+              Spoken English
             </NavDropdown.Item>
-            <NavDropdown.Item href="/home/#maths" eventKey={3}>
-              Maths
+            <NavDropdown.Item href="/home/#coding" eventKey={3}>
+              Coding
             </NavDropdown.Item>
           </NavDropdown>
           <Nav.Link className="links" href="/home/#blog" eventKey={4}>
@@ -49,12 +48,20 @@ const Header = () => {
             <div className="d-flex">Contact us</div>
             <div className="underline"></div>
           </Nav.Link>
-          <Nav.Link className="links" as={NavLink} to="/register" eventKey={6}>
+          <Nav.Link
+            className="links"
+            href="https://app.makolearning.com/signup"
+            eventKey={6}
+          >
             <div className="d-flex">Sign up</div>
             <div className="underline"></div>
           </Nav.Link>
-          <Nav.Link className="links" as={Link} to="/login" eventKey={7}>
-            <Button className="btn btn-login">
+          <Nav.Link
+            className="links"
+            href="https://app.makolearning.com/login"
+            eventKey={7}
+          >
+            <Button className="btn btn-login" style={{ color: "black" }}>
               {/* {currentUser ? <div>Dashboard</div> : <div>Login</div>} */}
               Login
             </Button>

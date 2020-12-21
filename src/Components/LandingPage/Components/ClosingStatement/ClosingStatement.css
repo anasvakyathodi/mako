@@ -4,7 +4,7 @@
     height: max-content;
     margin: 0 auto;
     padding: 0;
-    background: var(--mako-primary);
+    background: #000;
   }
   .closing .web-body {
     text-align: center;
@@ -33,11 +33,10 @@
 @media (min-width: 1024px) {
   .closing {
     width: 100%;
-    max-width: 1440px;
     height: 401px;
     margin: 0 auto;
     padding: 0;
-    background: var(--mako-primary);
+    background: #000;
   }
   .closing .web-body {
     margin-top: 124px;
@@ -67,4 +66,15 @@
     margin-top: 20px;
     color: var(--ui-white);
   }
+}
+.enroll-btn:hover {
+  border: 2px solid var(--mako-secondary) !important;
+  color: var(--mako-secondary) !important;
+  background-color: black !important;
+}
+.closing .enroll-btn {
+  color: white;
+}
+.closing .container {
+  max-width: 1440px;
 }

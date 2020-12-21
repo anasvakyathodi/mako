@@ -45,48 +45,50 @@ const Blog = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="container blog">
-      <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
-        <div className="web-topic">To teach is divine</div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
-        <div className="web-heading">
-          Top array of tutors accross the industry
-        </div>
-      </ScrollAnimation>
-      <div className="blog-container">
-        <Container>
-          <Row>
-            <Col className="card-container">
-              {transitions.map(({ item, key }) => (
-                <animated.div key={key} className="card">
-                  <div className="image-container">
-                    <img src={item.url} alt="blog-card" />
-                  </div>
-                  <div className="card-body">
-                    <h5 className="web-subtitle">{item.name}</h5>
-                    <p className="web-quote">“{item.quote} ”</p>
-                  </div>
-                </animated.div>
-              ))}
-            </Col>
-            <Col className="d-none d-lg-block profile-container">
-              <Row>
-                <Col xs="4">
-                  <div className="profile-image" id="p1"></div>
-                </Col>
-                <Col xs="4">
-                  <div className="profile-image" id="p2"></div>
-                </Col>
-                <Col xs="4">
-                  <div className="profile-image" id="p3"></div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-        <div className="blog-rect-wrapper">
-          <div className="blog-rect"></div>
+    <div className="blog">
+      <div className="container-lg">
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <div className="web-topic">To teach is divine</div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <div className="web-heading">
+            Top array of tutors accross the industry
+          </div>
+        </ScrollAnimation>
+        <div className="blog-container">
+          <Container>
+            <Row>
+              <Col className="card-container">
+                {transitions.map(({ item, key }) => (
+                  <animated.div key={key} className="card">
+                    <div className="image-container">
+                      <img src={item.url} alt="blog-card" />
+                    </div>
+                    <div className="card-body">
+                      <h5 className="web-subtitle">{item.name}</h5>
+                      <p className="web-quote">“{item.quote} ”</p>
+                    </div>
+                  </animated.div>
+                ))}
+              </Col>
+              <Col className="d-none d-lg-block profile-container">
+                <Row>
+                  <Col xs="4">
+                    <div className="profile-image" id="p1"></div>
+                  </Col>
+                  <Col xs="4">
+                    <div className="profile-image" id="p2"></div>
+                  </Col>
+                  <Col xs="4">
+                    <div className="profile-image" id="p3"></div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+          <div className="blog-rect-wrapper">
+            <div className="blog-rect"></div>
+          </div>
         </div>
       </div>
     </div>

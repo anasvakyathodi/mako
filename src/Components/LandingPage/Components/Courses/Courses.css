@@ -7,8 +7,8 @@
   }
   .courses .card-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     margin-top: 1rem;
   }
 }
@@ -64,7 +64,7 @@
 }
 .courses .card .web-title {
   text-align: center;
-  color: var(--mako-primary);
+  color: var(--ui-black);
   margin-bottom: 1.5rem;
 }
 .courses .card .web-body {
@@ -73,7 +73,7 @@
   color: var(--ui-black);
 }
 .courses .card a {
-  color: var(--mako-primary);
+  color: var(--ui-black);
   text-align: center;
   margin-left: ‭7.875‬rem;
 }

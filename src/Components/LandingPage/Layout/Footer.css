@@ -6,15 +6,25 @@
   .footer .footer-logo {
     text-align: center;
     margin-top: 3rem;
-  }
-  .footer .social-icons {
-    margin: 2rem auto 2rem;
+  }*/
+@media (max-width: 1023px) {
+  .footer-header,
+  .footer-body,
+  .footer-body-bold {
     text-align: center;
-    font-size: 32px;
   }
-  .footer .social-icons a {
-    color: var(--ui-white);
+  .social-icons {
+    text-align: center;
   }
+}
+.footer .social-icons {
+  font-size: 32px;
+  margin: auto;
+}
+.footer .social-icons a {
+  color: var(--ui-white);
+  margin: 0 0.3rem;
+} /*
   .footer .web-body {
     margin-top: 80px;
     margin-bottom: 25px;
@@ -55,23 +65,25 @@
 } */
 .footer {
   margin: 0 auto;
-  background: var(--ui-black);
+  padding: 2rem 0;
+  background: #2c2e37;
   height: 100%;
 }
-.footer .web-body-2,
+.footer .web-body,
 .footer .web-subheading,
 .footer .web-heading {
   color: var(--ui-white);
 }
-.footer .web-subheading {
+/* .footer .web-subheading {
   margin: 1rem 0;
-}
+} */
 
 @media (min-width: 1024px) {
   .social-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
     align-items: center;
   }
   .social-container a {
@@ -82,11 +94,11 @@
   .social-container .web-heading {
     margin: auto;
   }
-  .social-container .web-subheading {
+  /* .social-container .web-subheading {
     margin-left: 2rem;
-  }
+  } */
   .social-container a {
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
     margin-left: 2rem;
   }
   .social-container {
@@ -94,13 +106,58 @@
     align-items: center;
     flex-direction: column;
   }
-
-  .footer-contaier {
+  .footer .web-subheading {
+    margin: 2rem auto;
+  }
+  /* .footer-contaier {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
 }
 .footer .web-error {
   margin: 1rem auto;
+}
+/* .contact-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+} */
+.tac {
+  text-align: center;
+}
+.footer-logo {
+  width: 10rem;
+  margin: 0.5rem auto;
+}
+.footer-header {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.footer-body {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+.footer-body-bold {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+.btn-footer {
+  background: var(--mako-secondary) !important;
+  border: none;
 }
